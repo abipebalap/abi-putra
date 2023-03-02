@@ -1,0 +1,16 @@
+<?php
+include  "minemarket.php";
+$query_mysqli = mysqli_query($host,"SELECT * FROM toko ")or die(mysqli_error());
+$nomor = 1;
+while($data = mysqli_fetch_array($query_mysql)){
+?>
+    <tr>
+        <td><?php echo $nomor++; ?></td>
+        <td><?php echo $data ['barang']; ?></td>
+        <td><?php echo $data ['pembelian']; ?></td>
+        <td><?php echo $data ['10,11']; ?></td>
+        <td><?php echo $data ['12,14']; ?></td>
+        <td><?php echo $data ['sony,samsung']; ?></td>
+</tr>
+<?php } 
+?>

@@ -1,0 +1,7 @@
+<?php
+$sum = 0;
+echo " FOR = " . "<br>";
+$panjang = count($bil);
+echo $sum;
+for($a=1; $a<$panjang; $a++){
+    $sum = $sum + $bil[$a]
